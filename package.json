@@ -1,0 +1,15 @@
+{
+  "name": "momence-server",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun app.ts",
+    "dev": "bun --hot app.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
