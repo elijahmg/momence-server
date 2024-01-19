@@ -13,7 +13,11 @@ const server = Bun.serve({
 
     const [date, rates] = parseExchangeRate(responseAsText)
 
-    return new Response(JSON.stringify({ date, rates }));
+    return new Response(JSON.stringify({ date, rates }), {
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
   },
 });
 
